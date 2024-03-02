@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:ui": "rm -rf dist && cd C:/Users/jerem/Documents/Koulu/Web ohjelmointi/Testailu && npm run build && cp -r dist 'C:/Users/jerem/Documents/Koulu/Web ohjelmointi/Git repo/Render_Test",
+    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
   },
   "author": "Jeremias Salonen",
   "license": "ISC",
